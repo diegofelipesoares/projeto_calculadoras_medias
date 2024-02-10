@@ -95,7 +95,7 @@ function atualizaMediaFinal(){
     const mediaFinal = calculaMediaFinal();
  
     //recupera a tag e altera o seu valor.
-    document.getElementById("media-final-valor").innerHTML = mediaFinal;
+    document.getElementById("media-final-valor").innerHTML = mediaFinal.toFixed(2);
     // utilizando no ternário as constantes com os spans
     document.getElementById("media-final-resultado").innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;
  
