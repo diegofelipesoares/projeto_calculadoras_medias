@@ -45,7 +45,8 @@ function adicionaLinha(){
         atividades.push(inputNomeAtividade.value);
         notas.push(parseFloat(inputNotaAtividade.value));
         
-        //Vamos adicionar o código da tabela dentro da linha
+        //criamos a variável linha que recebe os códigos da tabela + o valor
+        //Ao final essa variável linha tem seu valor adicionado à variável global linhaS
         let linha = '<tr>';
         linha += `<td>${inputNomeAtividade.value} </td>`;
         linha += `<td>${inputNotaAtividade.value} </td>`;
